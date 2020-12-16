@@ -65,6 +65,12 @@ function setupGame(Letters) {
         Object.assign(tile, {
             className : 'Tiles ui-droppable'
         });
+        if(i == 1) {
+            tile.setAttribute("id", "doubleLetter");
+        }
+        if(i == 5) {
+            tile.setAttribute("id", "doubleWord");
+        }
         //append the tile to the board
         ScrabbleBoard.append(tile);
     }
